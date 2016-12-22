@@ -1,2 +1,3 @@
-# confweb
-Some a base Jekyll site for hosting conference web pages.
+# Gaussian Process Masterclass 2017
+
+The site of the Lancaster Gaussian Process Masterclass
