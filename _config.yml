@@ -34,7 +34,7 @@ youtube:
   width: 560
 
 conference:
-  draft: true
+  draft: false
   hide_tentative: true
   hosts:
   
