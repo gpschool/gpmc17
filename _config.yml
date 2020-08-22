@@ -1,19 +1,27 @@
 # Site settings
 title: Gaussian Process Masterclass, 2017
-email: n.lawrence@sheffield.ac.uk
+author:
+  name: Neil D. Lawrence
+  email: n.lawrence@sheffield.ac.uk
 description: > # this means to ignore newlines until "baseurl:"
   Gaussian Process Master Class hosted by the STOR-i PhD program at the University of Lancaster. 
 baseurl: "/gpmc17" # the subpath of your site, e.g. /blog/
 url: "http://gpss.cc" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  gpschool
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-remote-theme
+remote_theme: lawrennd/proceedings
+style: gpss
 
 
 youtube:
   height: 315
   width: 560
 
-github:
+ghub:
   edit: true
   repository: gpmc17
   
@@ -37,8 +45,8 @@ conference:
   draft: false
   hide_tentative: true
   hosts:
-  
-  room: Room
+  short_name: GPMC
+  full_name: Gaussian Process Masterclass
   venue: Lancaster University
   location: Lancaster, Lancashire
   name: Gaussian Process Masterclass
@@ -49,13 +57,17 @@ conference:
   - 2017-02-07
   draft: true # set to True if the programme is draft only.
   hosts:
-  organizers:
-  - name: Neil D. Lawrence
-    url: http://inverseprobability.com
-    institute: Amazon Research Cambridge and University of Sheffield
-  - name: Javier Gonzalez
-    url: http://javiergonzalezh.github.io/
-    institute: Amazon Research Cambridge
+  chairs:
+  - type: Speakers
+    people:
+    - given: Neil D.
+      family: Lawrence
+      url: http://inverseprobability.com
+      institute: Amazon Research Cambridge and University of Sheffield
+    - given: Javier
+      family: Gonzalez
+      url: http://javiergonzalezh.github.io/
+      institute: Amazon Research Cambridge
 previous_meeting:
   name: Gaussian Process and Uncertainty Quanitification Summer School
   url: http://gpss.cc/gpuqss16/
